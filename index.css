@@ -1,0 +1,86 @@
+/*template 
+position
+display
+size: width > height
+spacing: margin > padding
+color: background > font
+fonts: family > size > weight
+text: decoration > shadow
+border
+animation
+transition
+*/
+
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+/*tags*/
+html {
+	scroll-behavior: smooth;
+}
+body {
+	height: 600vh;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+nav {
+	position: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	height: 10vh;
+	background: #00305c85;
+	/* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); */
+}
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100vw;
+	height: 17.5vh;
+	padding: 0 25vw;
+	color: #fff;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	cursor: pointer;
+}
+/*classes*/
+.op {
+	font-size: 2.4em;
+	font-weight: 300;
+	transition: all 0.1s ease;
+	text-transform: uppercase;
+}
+.op:hover {
+	text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+.content-wrapper {
+	background: linear-gradient(180deg, #0070d7 0%, #4239af 86.98%);
+}
+.page {
+	display: flex;
+	align-items: flex-end;
+	height: 100vh;
+}
+.footer-logo {
+	height: 15vh;
+	border-radius: 15px;
+}
+.social-icons {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+
+/*ids*/
+
+/*pseudo-elements*/
+::-webkit-scrollbar {
+	display: none;
+}
+
+/*keyframes animations*/
