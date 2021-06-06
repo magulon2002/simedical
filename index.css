@@ -118,15 +118,12 @@ a:hover {
   padding-top: 20px;
 }
 
-.text::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: #aaa;
   display: block;
 }
-.text::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #000;
-}
-html::-webkit-scrollbar {
-  display: none;
 }
