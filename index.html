@@ -23,7 +23,6 @@
         <div class="card-large">
           <h2 class="header">O FUNDACJI</h2>
           <div class="content-wrapper">
-            <img class="logo" src="assets/logo-r.png" alt="logo" />
             <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -33,23 +32,59 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <img class="logo" src="assets/logo-r.png" alt="logo" />
           </div>
         </div>
       </div>
       <div id="cele" class="page">
         <div class="card-large">
-          <h2 class="header">CELE FUNDACJI</h2>
+          <h2 class="header">CELE DZIAŁANIA FUNDACJI</h2>
           <div class="content-wrapper">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
             <img class="logo" src="assets/logo-r.png" alt="logo" />
+            <ol class="text">
+              <li>
+                Celem fundacji jest wspieranie rozwoju woj. Śląskiego w
+                zakresie społecznym, kulturalnym i przedsiębiorczym, kultury
+                fizycznej i zdrowia oraz zarządzania, ładu i promocji miasta
+              </li>
+              <li>
+                Celami fundacji są również: 
+                <ul>
+                  <li>
+                Pomoc społeczna, w tym w
+                szczególności pomocy rodzinom i osobom w trudnej sytuacji
+                życiowej oraz wyrównywania szans tych rodzin i osób 
+                  </li>
+                  <li>Nauka, edukacja, oświata i wychowanie </li>
+                  <li>Działalność charytatywna i dobroczynność </li>
+                  <li>
+                    e.
+                Ochrona i promocja zdrowia 
+                  </li>
+                  f. Działalność na rzecz osób
+                niepełnosprawnych g. Promocja zatrudnienia i aktywizacji
+                zawodowej, w szczególności osób pozostających bez pracy i
+                zagrożonych zwolnieniem z pracy h. Działalność na rzecz równych
+                praw kobiet i mężczyzn i. Działalność na rzecz osób starszych i
+                w wieku emerytalnym j. Działalność wspomagająca rozwój
+                gospodarczy, w tym rozwój przedsiębiorczości społecznej k.
+                Działalność wspomagająca rozwój techniki, wynalazczości i
+                innowacyjności oraz rozpowszechnianie i wdrażanie nowych
+                rozwiązań technicznych w praktyce gospodarczej l. Działalność
+                wspomagająca rozwój wspólnot i społeczności lokalnych m.
+                Kultura, sztuka ochrona dóbr kultury i dziedzictwa narodowego n.
+                Kultura fizyczna i sport o. Ekologia, ochrona środowiska i
+                zwierząt v. Turystyka i krajoznawstwo x. Upowszechnianie i
+                ochrona wolności i praw człowieka oraz swobód obywatelskich, a
+                także działania wspomagające rozwój demokracji y. Działalność na
+                rzecz integracji europejskiej oraz rozwijania kontaktów i
+                współpracy między społeczeństwami z. Wspieranie wolontariatu ż.
+                Przeciwdziałanie uzależnieniom i patologiom społecznym ź. Kult
+                religijny, w tym m. In. Wspieranie chrześcijaństwa a1)
+                działalność na rzecz osób z otyłością a2) działalność na rzecz
+                osób ze schorzeniami ze strony układu ruchu
+              </li>
+            </ol>
           </div>
         </div>
       </div>
@@ -57,7 +92,6 @@
         <div class="card-large">
           <h2 class="header">AKCJE FUNDACJI</h2>
           <div class="content-wrapper">
-            <img class="logo" src="assets/logo-r.png" alt="logo" />
             <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -67,6 +101,7 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <img class="logo" src="assets/logo-r.png" alt="logo" />
           </div>
         </div>
       </div>
@@ -165,7 +200,7 @@
           <div class="contact-info">
             <label>Skontakuj się z nami: </label>
             <p>Numer telefonu: 123-456-789</p>
-            <p>Adres email: fundacja@gmail.com</p>
+            <p>Adres email: fundacja_simedical@onet.pl</p>
           </div>
           <div class="social">
             <label>Nasze media społecznościowe: </label> <br />
@@ -186,26 +221,5 @@
         </footer>
       </div>
     </div>
-    <script>
-      const debounce = (fn) => {
-        let frame;
-        return (...params) => {
-          if (frame) {
-            cancelAnimationFrame(frame);
-          }
-          frame = requestAnimationFrame(() => {
-            fn(...params);
-          });
-        };
-      };
-      const storeScroll = () => {
-        document.documentElement.dataset.scroll = window.scrollY;
-        console.log(window.scrollY);
-      };
-      document.addEventListener("scroll", debounce(storeScroll), {
-        passive: true,
-      });
-      storeScroll();
-    </script>
   </body>
 </html>

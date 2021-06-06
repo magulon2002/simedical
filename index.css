@@ -1,16 +1,3 @@
-/*template 
-position
-display
-size: width > height
-spacing: margin > padding
-color: background > font
-fonts: family > size > weight
-text: decoration > shadow
-border
-animation
-transition
-*/
-
 /*imports*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
 
@@ -21,24 +8,7 @@ html {
 body {
   margin: 0;
   font-family: "Quicksand", sans-serif;
-}
-html[data-scroll="0"] .o-fundacji {
-  text-shadow: 0 0 10px #fff;
-}
-html[data-scroll="969"] .cele {
-  text-shadow: 0 0 10px #fff;
-}
-html[data-scroll="1938"] .akcje {
-  text-shadow: 0 0 10px #fff;
-}
-html[data-scroll="2907"] .podopieczni {
-  text-shadow: 0 0 10px #fff;
-}
-html[data-scroll="3876"] .kadra {
-  text-shadow: 0 0 10px #fff;
-}
-html[data-scroll="4845"] .darowizny {
-  text-shadow: 0 0 10px #fff;
+  overflow-x: hidden;
 }
 nav {
   position: fixed;
@@ -136,6 +106,8 @@ a:hover {
   font-size: 1.4em;
   padding: 0 40px;
   text-align: justify;
+  overflow: auto;
+  height: 230px;
 }
 .footer-logo {
   height: 12.5vh;
@@ -146,11 +118,15 @@ a:hover {
   padding-top: 20px;
 }
 
-/*ids*/
-
-/*pseudo-elements*/
-::-webkit-scrollbar {
+.text::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa;
+  display: block;
+}
+.text::-webkit-scrollbar-thumb {
+  background: #000;
+}
+html::-webkit-scrollbar {
   display: none;
 }
-
-/*keyframes animations*/
